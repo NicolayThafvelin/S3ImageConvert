@@ -1,0 +1,45 @@
+{
+  "name": "image-server",
+  "version": "0.1.0",
+  "author": "Matteo Collina <matteo@collina.me>",
+  "contributors": [
+    "Paolo Chiodi <chiodi84@gmail.com>",
+    "Filippo De Pretto <filippo.depretto@mavigex.com>"
+  ],
+  "private": true,
+  "dependencies": {
+    "async": "2.0.0-rc.4",
+    "aws-sdk": "^2.3.9",
+    "bl": "~1.1.2",
+    "connect": "~3.4.1",
+    "debug": "^2.2.0",
+    "errormailer": "~1.0.1",
+    "gm": "^1.22.0",
+    "kanban": "0.0.3",
+    "letsencrypt-express": "^1.1.5",
+    "minimatch": "~0.2.11",
+    "morgan": "^1.7.0",
+    "newrelic": "1.27.1",
+    "nodemailer": "~2.3.2",
+    "replacestream": "^4.0.0",
+    "resizer": "0.0.6",
+    "sharp": "^0.14.1"
+  },
+  "engines": {
+    "node": ">= 4.2.x",
+    "npm": "3.8.x"
+  },
+  "devDependencies": {
+    "mocha": "~1.19.0",
+    "sinon": "~1.9.1",
+    "chai": "~1.9.1",
+    "jshint": "~2.5.1",
+    "sinon-chai": "~2.5.0",
+    "gm": "~1.22.0",
+    "hyperquest": "~0.3.0"
+  },
+  "scripts": {
+    "start": "node image-server.js"
+  },
+  "license": "MIT"
+}
