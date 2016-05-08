@@ -23,7 +23,7 @@
     "sharp": "^0.14.1"
   },
   "engines": {
-    "node": ">= 4.2.x",
+    "node": "5.5.x",
     "npm": "3.8.x"
   },
   "devDependencies": {
