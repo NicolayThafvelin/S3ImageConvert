@@ -1,5 +1,5 @@
 module.exports = {
-    port : process.env.port || 3333,
+    port : process.env.PORT || 3333,
     targetBuckets: [
         'layup-images',
         'layup'
