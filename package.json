@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Nicolay Thafvelin <nicolay@layup.io>",
   "contributors": [
-   "nicolay@layup.io"
+    "nicolay@layup.io"
   ],
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "connect": "~3.4.1",
     "debug": "^2.2.0",
     "errormailer": "~1.0.1",
+    "kerberos": "0.0.21",
     "letsencrypt-express": "^1.1.5",
     "minimatch": "~0.2.11",
     "morgan": "^1.7.0",
