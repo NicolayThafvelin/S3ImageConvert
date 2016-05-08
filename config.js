@@ -4,11 +4,16 @@ module.exports = {
         'layup'
     ],
     resizeBucket: 'layup-testing',
-    awsSecret: '',
+    awsKey : 'AKIAJAD6INMSJCHYV6CA',
+    awsSecret: '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',
+    awsRegion : 'eu-west-1',
     
-    emailAuth: {
-        key: 'cipio',
-        secret: 'Sk3TksEU3GGtZzaK',
+    emailTransport: {
+        service: 'Sendgrid', // use well known service
+        auth : {
+            key: 'cipio',
+            secret: 'Sk3TksEU3GGtZzaK',
+        }
     },
 
     emailSettings: {
