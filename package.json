@@ -1,10 +1,9 @@
 {
   "name": "image-server",
   "version": "0.1.0",
-  "author": "Matteo Collina <matteo@collina.me>",
+  "author": "Nicolay Thafvelin <nicolay@layup.io>",
   "contributors": [
-    "Paolo Chiodi <chiodi84@gmail.com>",
-    "Filippo De Pretto <filippo.depretto@mavigex.com>"
+   "nicolay@layup.io"
   ],
   "private": true,
   "dependencies": {
@@ -14,8 +13,6 @@
     "connect": "~3.4.1",
     "debug": "^2.2.0",
     "errormailer": "~1.0.1",
-    "gm": "^1.22.0",
-    "kanban": "0.0.3",
     "letsencrypt-express": "^1.1.5",
     "minimatch": "~0.2.11",
     "morgan": "^1.7.0",
@@ -35,7 +32,6 @@
     "chai": "~1.9.1",
     "jshint": "~2.5.1",
     "sinon-chai": "~2.5.0",
-    "gm": "~1.22.0",
     "hyperquest": "~0.3.0"
   },
   "scripts": {
