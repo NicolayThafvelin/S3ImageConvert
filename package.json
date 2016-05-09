@@ -34,7 +34,7 @@
     "hyperquest": "~0.3.0"
   },
   "scripts": {
-    "start": "node image-server.js"
+    "start": "node app.js"
   },
   "license": "MIT"
 }

@@ -1,7 +1,15 @@
 #! /usr/bin/env node
-'use strict';
 
-global.serverConfig = require('./config');
+'use strict';
+var config = require('./config');
+try {
+    var localConfig = require('./localConfig');
+    for (var key in localConfig) {
+        config[key] = localConfig[key];
+    }
+} catch (e) {}
+
+global.serverConfig = config;
 
 
 // curl http://localhost:3000//w90/for/http://www.logotypes101.com/logos/755/6C6C997C421ED4073E95E25E43BF51B0/ciaode.png
@@ -20,7 +28,10 @@ var http = require('http');
 var AWS = require('aws-sdk');
 var url = require('url');
 
-var mailTransport = nodemailer.createTransport("SMTP", serverConfig.emailTransport);
+var mailTransport = nodemailer.createTransport("SMTP", {
+    service: serverConfig.emailService,
+    auth: serverConfig.emailAuth
+});
 var errorHandler = errormailer(mailTransport, serverConfig.emailSettings);
 
 var app = connect()
@@ -43,3 +54,4 @@ var app = connect()
 // .listen(process.env.PORT || 3333);
 
 http.createServer(app).listen(serverConfig.port);
+console.info('Server running on: localhost:' + serverConfig.port);
