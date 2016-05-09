@@ -11,9 +11,6 @@ try {
 
 global.serverConfig = config;
 
-
-// curl http://localhost:3000//w90/for/http://www.logotypes101.com/logos/755/6C6C997C421ED4073E95E25E43BF51B0/ciaode.png
-
 if (process.env.NEW_RELIC_LICENSE_KEY) {
     require('newrelic');
 }

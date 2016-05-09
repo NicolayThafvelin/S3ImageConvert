@@ -23,8 +23,8 @@ module.exports = {
     emailAuth: JSON.parse(process.env.EMAIL_AUTH || "{}"),
 
     emailSettings: {
-        from: process.env.ERRORMAIL_FROM || 'post@layup.io',
-        to: process.env.ERRORMAIL_TO || 'nicolay@layup.io',
+        from: process.env.ERRORMAIL_FROM,
+        to: process.env.ERRORMAIL_TO,
         subject: process.env.ERRORMAIL_SUBJECT || 'Image server error'
     }
 };
