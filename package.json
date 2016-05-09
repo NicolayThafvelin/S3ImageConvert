@@ -13,14 +13,14 @@
     "connect": "~3.4.1",
     "debug": "^2.2.0",
     "errormailer": "~1.0.1",
-    "letsencrypt-express": "^1.1.5",
     "minimatch": "~0.2.11",
     "morgan": "^1.7.0",
     "newrelic": "1.27.1",
     "nodemailer": "~2.3.2",
     "replacestream": "^4.0.0",
     "resizer": "0.0.6",
-    "sharp": "^0.14.1"
+    "sharp": "^0.14.1",
+    "svgo": "^0.6.6"
   },
   "engines": {
     "node": "5.x.x"
