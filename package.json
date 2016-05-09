@@ -24,7 +24,7 @@
     "sharp": "^0.14.1"
   },
   "engines": {
-    "node": "5.5.x"
+    "node": "5.x.x"
   },
   "devDependencies": {
     "mocha": "~1.19.0",
