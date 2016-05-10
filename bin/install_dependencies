@@ -1,0 +1,10 @@
+#!/bin/bash
+if  type "node" &> /dev/null ; then
+    curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+    yum -y install nodejs
+    yum install gcc-c++ make
+    npm install -g forever
+fi
+
+npm prune
+npm install

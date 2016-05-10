@@ -1,0 +1,4 @@
+#!/bin/bash
+if  type "forever" &> /dev/null ; then
+    forever stopall
+fi
