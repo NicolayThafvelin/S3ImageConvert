@@ -1,5 +1,5 @@
 #!/bin/bash
-if  type "node" &> /dev/null ; then
+if  ! [ -x "$(command -v node)" ]; then
     yum update
     curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
     yum -y install nodejs

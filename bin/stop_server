@@ -1,4 +1,4 @@
 #!/bin/bash
-if  type "forever" &> /dev/null ; then
+if  ! [ -x "$(command -v forever)" ];  then
     forever stopall
 fi
