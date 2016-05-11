@@ -38,7 +38,7 @@ var app = connect()
         if (!req.query) {
             var parsedUrl = url.parse(req.url, true);
             req.query = parsedUrl.query;
-            req.path = parsedUrl.pathname;
+            req.path = decodeURI(parsedUrl.pathname).replace(/\+/g,' ').replace(/%2B/g, '+');
             req.search = parsedUrl.search;
         }
 
