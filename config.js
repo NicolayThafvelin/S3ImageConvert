@@ -5,7 +5,7 @@ module.exports = {
         'layup-images',
         'layup'
     ],
-    resizeBucket: 'layup-testing',
+    resizeBucket: 'layup-resized',
 
     acceptedSizes: [
         128,
