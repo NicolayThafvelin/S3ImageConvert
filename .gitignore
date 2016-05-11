@@ -7,7 +7,3 @@ temp/*
 /JasmineAdapter-1.1.2.js
 /jasmine-1.1.0.js
 
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml

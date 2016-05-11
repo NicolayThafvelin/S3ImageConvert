@@ -1,4 +1,0 @@
-#!/bin/bash
-if  ! [ -x "$(command -v forever)" ];  then
-    forever stopall
-fi
