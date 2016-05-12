@@ -44,6 +44,14 @@ var app = connect()
 
         next();
     })
+    .use(function(req, res, next){
+        if(req.path === '/health') {
+            res.statusCode = 200;
+            res.end();
+        }else{
+            next();
+        }
+    })
     //Image middleware
     .use(imageMiddleware)
     // sending emails in case of errors
