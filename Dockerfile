@@ -1,32 +1,12 @@
-# FROM ubuntu:14.04
-# MAINTAINER Nicolay Thafvelin, nicolay@layup.io
+FROM ubuntu:14.04
+MAINTAINER Nicolay Thafvelin, nicolay@layup.io
 
+RUN DEBIAN_FRONTEND=noninteractive add-apt-repository ppa:chris-lea/node.js
+RUN apt-get update
+RUN apt-get dist-upgrade -y
 
-# RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-# #Install nodejs
-# RUN  apt-get install -y nodejs
-# # Install Python Setuptools
-# RUN apt-get install -y build-essential
-
-# # Create app directory
-# RUN mkdir -p /usr/src/app
-# WORKDIR /usr/src/app
-
-# # Install app dependencies
-# COPY package.json /usr/src/app/
-# RUN npm install
-
-# # Bundle app source
-# COPY . /usr/src/app
-
-# # Expose
-# EXPOSE  3000
-
-# # Run
-# CMD [ "npm", "start" ]
-
-
-FROM node:6.1.0
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 
 # Create app directory
 RUN mkdir -p /usr/src/app
