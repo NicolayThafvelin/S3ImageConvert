@@ -19,7 +19,7 @@
     "nodemailer": "~2.3.2",
     "replacestream": "^4.0.0",
     "resizer": "0.0.6",
-    "sharp": "^0.14.1",
+    "gm": "1.22.0",
     "svgo": "^0.6.6"
   },
   "engines": {

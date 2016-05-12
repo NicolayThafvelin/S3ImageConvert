@@ -21,6 +21,9 @@ module.exports = {
     awsKey: process.env.AWS_KEY,
     awsSecret: process.env.AWS_SECRET,
     awsRegion: process.env.AWS_REGION,
+   
+    useCache : true,
+    useWebP : true,
 
     emailService: process.env.EMAIL_SERVICE,
     emailAuth: JSON.parse(process.env.EMAIL_AUTH || "{}"),

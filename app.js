@@ -50,5 +50,5 @@ var app = connect()
     .use(errorHandler);
 // .listen(process.env.PORT || 3333);
 
-http.createServer(app).listen(serverConfig.port);
-console.info('Server running on: localhost:' + serverConfig.port);
+http.createServer(app).listen(serverConfig.port || 3000);
+console.info('Server running on: localhost:' + serverConfig.port || 3000);
