@@ -1,12 +1,14 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER Nicolay Thafvelin, nicolay@layup.io
 
-RUN DEBIAN_FRONTEND=noninteractive add-apt-repository ppa:chris-lea/node.js
 RUN apt-get update
 RUN apt-get dist-upgrade -y
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
+RUN apt-get install -y curl
+RUN apt-get install -y python-setuptools
+RUN apt-get install -y build-essential 
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN apt-get install -y nodejs 
 
 # Create app directory
 RUN mkdir -p /usr/src/app
